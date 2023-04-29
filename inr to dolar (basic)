@@ -1,0 +1,13 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Currency converter");
+        System.out.println("Enter amount in INR:");
+       Scanner sc=new Scanner(System.in); 
+       int amt=sc.nextInt();
+        double dol=amt/81.75;
+        DecimalFormat df = new DecimalFormat("#.##");
+       System.out.println("Amount in Dollar:"+df.format(dol));
+    }
+}
